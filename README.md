@@ -18,10 +18,7 @@ Encontrar vagas 100% remotas de qualidade pode ser um desafio demorado. Este pro
 
 ## 👀 Preview do Projeto
 
-*(Substitua esta imagem por um print do seu grupo do Telegram recebendo as vagas)*
-<div align="center">
-  <img src="https://via.placeholder.com/800x400.png?text=Coloque+aqui+um+print+do+seu+grupo+recebendo+as+vagas" alt="Demonstração do Bot no Telegram">
-</div>
+<img width="914" height="925" alt="vagas_home" src="https://github.com/user-attachments/assets/1bf98804-0541-4613-81cb-c122c5a673fc" />
 
 ---
 
