@@ -20,7 +20,6 @@ PALAVRAS_CHAVE = [
 ] 
 
 def vaga_nos_interessa(titulo):
-    # Retorna 'True' direto para aprovar TODAS as vagas do site
     return True
 
 # --- 2. BANCO DE DADOS ---
@@ -43,7 +42,6 @@ def enviar_alerta_telegram(titulo, empresa, link, data, categoria):
         print("❌ ERRO CRÍTICO: Token ou Chat ID não encontrados no .env!")
         return False
 
-    # Mudamos a formatação para HTML (usando <b> para negrito) que é muito mais segura!
     mensagem = f"🏠 <b>NOVA VAGA HOME OFFICE!</b>\n\n" \
                f"💼 <b>Vaga:</b> {titulo}\n" \
                f"🏢 <b>Empresa:</b> {empresa}\n" \
@@ -68,7 +66,7 @@ def enviar_alerta_telegram(titulo, empresa, link, data, categoria):
             print(f"✅ Telegram: {titulo[:40]}...")
             return True
         else:
-            # AGORA ELE VAI IMPRIMIR O MOTIVO EXATO DO ERRO:
+
             print(f"❌ Erro na API do Telegram: {r.status_code} - Detalhe: {r.text}")
             return False
     except Exception as e:
